@@ -1,0 +1,31 @@
+.confirmation-container {
+  margin: 64px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  max-width: 480px;
+}
+
+.confirmation-text p {
+  margin-bottom: 16px;
+}
+
+
+.confirmation-container a{
+  padding: 8px;
+}
+
+.back {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .confirmation-container {
+    margin: 32px 16px;
+    width: 90vw;
+  }
+}

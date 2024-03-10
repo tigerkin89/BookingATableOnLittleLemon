@@ -1,0 +1,121 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  font-family: var(--font-main);
+  background-color: #E8E8E8;
+  box-shadow: 0 2px 2px 2px rgb(58 54 54 / 13%);
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+  margin-right: 16px;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  font-style: normal;
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 44px;
+  color: var(--darkgray);
+}
+
+.navigation ul li a.login {
+  width: 120px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 44px;
+  color: var(--gray);
+  background: var(--green);
+  border-radius: 5px;
+}
+
+.navigation .logo-link {
+  margin-left: 2rem;
+}
+
+.navigation a.active {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.hamburger {
+  height: 40px;
+  width: 40px;
+  display: none;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0.4em;
+  transition: border .3s ease;
+}
+
+.hamburger:hover {
+  border: 2px solid var(--green);
+}
+
+.hamburger-icon {
+  height: 24px;
+}
+
+@media (max-width: 856px) {
+  .hamburger {
+    display: block;
+  }
+    
+  .navigation-menu ul {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid var(--gray);
+  }
+  
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navigation-menu li a {
+    color: var(--darkgray);
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  
+  .navigation-menu li:hover {
+    background-color: var(--green);
+  }
+
+  .navigation-menu li a:hover {
+    color: white
+  }
+
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+
+  .navigation ul li a.login {
+    width: 220px;
+    margin: 1rem auto;
+    line-height: 18px;
+  }
+}
